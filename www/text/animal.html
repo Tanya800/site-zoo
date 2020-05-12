@@ -1,0 +1,34 @@
+<section class="contet">
+	<div class="container">
+		<h1>Наши животные</h1>
+		<div class="animals">
+			<?php while($row = mysql_fetch_assoc($result)): ?>
+			<div class="animal">
+				<figure>
+					<a href="animals.php?id=1&katalog="<?=$row['katalog']?>><img src=<?=$row['picture']?>></a>
+					<figcaption><?=$row['name']?></figcaption>
+				</figure>
+				<?=$row['description']?>
+			</div>
+			<?php endwhile?>
+			<!--
+			<div class="animal">
+				<figure>
+					<a href="new_lab.php?id=1&katalog=2"><img src="meerkats.jpg"></a>
+					<figcaption>​Сурикаты</figcaption>
+				</figure>
+				В парке посетителей встречают Дерек, Дебора, Джессика и Дейзи. Пообщаться с этими ребятами нельзя, но наблюдать за ними одно удовольствие.
+			</div>
+			
+			
+			<div class="animal">
+				<figure>
+					<a href="new_lab.php?id=1&katalog=3"><img src="Dikobraz.jpg"></a>
+					<figcaption>​Индийский дикобраз</figcaption>
+				</figure>
+				Валли и Евчик - дикобразы, проживающие в нашей сети зоопарков. Их излюбленное лакомство морковь и огурцы, не забудьте об этом при посещении зоопарка! Погладить дикобраза абсолютно безопасно, наши сотрудники покажут вам подход к этим колючим комочкам.
+			</div>
+			-->
+		</div>
+	</div>
+</section>

@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #F5BCF3;
+}
+
+header {
+	background-image: url("../hat3.jpg");
+	border-image-repeat:no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	margin: 0 auto;
+	height: 250px;
+}
+
+
+.navigation{
+	box-sizing: border-box;
+	background-color: #98267D;
+	width: 100%;
+	margin: 0 auto;
+  	padding-bottom: 20px; 
+  	padding-top: 20px;
+	padding-left: 55px;
+	padding-right: 55px;
+	text-align:center;
+}
+
+.navigation ul{
+	display:flex;
+	flex-flow : row nowrap;
+	justify-content: center;
+}
+.navigation li{
+	flex-basis:15%;
+	list-style: none;
+}
+
+.navigation a{
+	display: block;
+	color: white;
+	font-size: 28px;
+	line-height: 75px;
+	padding: 2px;
+	margin: 2px;
+	text-decoration: none;
+}
+
+.menu{
+	float: left;
+	display: flex;
+	flex-flow: column;
+	width: 15%;
+	
+}
+
+.menu a{
+	display: block;
+	color: white;
+	font-size: 28px;
+	line-height: 75px;
+	padding: 2px;
+	margin: 2px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+    .menu a{
+        font-size: 15px;
+    }
+}
+
+.menu a:hover { 
+    border: 1px dashed #541B8A; 
+   }
+
+.menu li{
+	list-style: none;
+	border: 1px solid #541B8A;
+	padding: 2px;
+}
+
+.contet{
+	box-sizing: border-box;
+	padding-left: 45px;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-bottom: 45px;
+	background-color:  #FCE1F6;
+	text-align: justify;
+	display: flex;
+	flex-flow: : row wrap;
+	font-size: 22px;
+	line-height: 2;
+	text-indent: 20px;
+}
+
+h1{
+	margin-top: 20px; 
+	padding: 15px;
+	font-style: italic;
+	font-size: 38px;
+	text-align: center;
+}
+
+h2{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 32px;
+	font-style: italic;
+	text-align: center;
+}
+
+
+.clear{
+	clear: both;
+}
+.basement{
+	width: 100%;
+	height: 100px;
+	background-color: #C163AB;
+	padding: 0;
+	margin: 0;
+}
